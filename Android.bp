@@ -1,0 +1,14 @@
+cc_test {
+    name: "hello",
+    srcs: ["hello.c"],
+    cflags: [
+        "-Wall",
+        "-Werror",
+       "-march=rv64imafd",
+	"-g",
+    ],
+    static_executable: true,
+    strip: {
+        keep_symbols: true,
+    },
+}
