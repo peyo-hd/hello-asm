@@ -1,3 +1,3 @@
-void test(int h, int *a) {
-  a[30]= h+ a[30] + 1;
+float _start(float fahr) {
+  return ((5.0/9.0) * (fahr-32.0));
 }
